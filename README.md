@@ -1,6 +1,6 @@
 # Inverse Kinematics using Neural Networks
 
-This project is aimed to calculate the inverse kinematics of a 3-DoF robotic manipulator using neural networks. The complexity of this problem is given by the robot’s geometry and the nonlinear trigonometric equations that describe the mapping between the Cartesian space and the joint space
+This project is aimed to calculate the inverse kinematics of a 3-DoF robotic manipulator using neural networks. The complexity of this problem is given by the robot’s geometry and the nonlinear trigonometric equations that describe the mapping between the Cartesian space and the joint space.
 
 
 
@@ -17,7 +17,7 @@ This project is aimed to calculate the inverse kinematics of a 3-DoF robotic man
 
 ## Approach
 
-We have designed a deep neural network for prediciting the joint rotations of the manipulator given the position of the end effector. For training the neural networks the data was generated with the help of WeBots simulator, position of the end effector was recorded and was saved in X_train.csv file, while the joint rotations were recorded in Y_train.csv. Then the data is passed through a deep linear regressor model to train it. 
+We have designed a deep neural network for prediciting the joint rotations of the manipulator given the position of the end effector. For training the neural networks the data was generated with the help of WeBots simulator, position of the end effector was recorded and was saved in X_train.csv file, while the joint rotations were recorded in Y_train.csv. Then the data is passed through a deep linear regression model to train it. 
 
 ### Dataset generation
 
@@ -40,7 +40,7 @@ The trained neural network was used to predict the joint angles for end effector
 
 ![Hnet-image](https://user-images.githubusercontent.com/64823050/130329990-f971c5ec-b915-47a9-a528-4472f07ac505.gif)
 
-The overall accuracy was 71.73% with a precision of 0.2.
+The overall accuracy was 72.73% with a precision of 0.2.
 
 
 
